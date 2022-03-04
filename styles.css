@@ -5,12 +5,29 @@
 
 #containers12 {
     display: flex;
+    justify-content: space-evenly;
 }
 
 #numberContainer {
     display: flex;
+    max-width: 750px;
+    flex-wrap: wrap;
 }
 
 #containers34 {
     display: flex;
+    justify-content: space-evenly;
+}
+
+#numberContainer div {
+    display: flex;
+    width: 150px;
+}
+
+html {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
