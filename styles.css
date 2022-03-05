@@ -2,6 +2,10 @@
     flex-direction: column;
 }
 
+.container {
+    background-color: blue;
+}
+
 .containers12, .containers34 {
     justify-content: space-evenly;
 }
@@ -26,6 +30,7 @@ html {
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 body {
@@ -40,4 +45,8 @@ body {
 
 div {
     display: flex;
+}
+
+.allButtons {
+    cursor: pointer;
 }
