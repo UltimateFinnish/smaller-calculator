@@ -1,3 +1,12 @@
+let display1 = document.querySelector('[data-num1]');
+let num1;
+
+if (num1 == isNaN()) {
+    alert("UHFIUFH");
+}
+
+
+
 function add(num1, num2) {
     return resultAdd = num1 + num2;
 };
@@ -13,9 +22,6 @@ function divide(num1, num2) {
 function multiply(num1, num2) {
     return resultMultiply = num1 * num2;
 }
-
-let display1 = document.querySelector('[data-num1]');
-let num1 = 0;
 
 [...document.getElementsByClassName("numberButtons")].forEach(function(item) {
     item.addEventListener('click', function() {
@@ -35,9 +41,20 @@ let num1 = 0;
     })
 });
 
+function check(num1) {
+    if (typeof num1 == 'number') {
+        alert("number");
+    } else {
+        alert("notanumber");
+    }
+}
+
 let numbers = {
     btn0: function() {
         console.log("0");
+        num1 = 6;
+        console.log(num1);
+        check(num1);
     },
     btn1: function() {
         console.log("1");
