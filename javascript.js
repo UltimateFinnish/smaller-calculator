@@ -17,13 +17,25 @@ function multiply(num1, num2) {
 let display1 = document.querySelector('[data-num1]');
 let num1 = 0;
 
-[...document.getElementsByClassName("allButtons")].forEach(function(item) {
+[...document.getElementsByClassName("numberButtons")].forEach(function(item) {
     item.addEventListener('click', function() {
-        obj[this.id]();
+        numbers[this.id]();
     })
-})
+});
 
-let obj = {
+[...document.getElementsByClassName("operatorButtons")].forEach(function(item) {
+    item.addEventListener('click', function() {
+        operators[this.id]();
+    })
+});
+
+[...document.getElementsByClassName("equalButton")].forEach(function(item) {
+    item.addEventListener('click', function() {
+        equals[this.id]();
+    })
+});
+
+let numbers = {
     btn0: function() {
         console.log("0");
     },
@@ -53,5 +65,26 @@ let obj = {
     },
     btn9: function() {
         console.log("9");
+    }
+}
+
+let operators = {
+    btnplus: function() {
+        console.log("+");
+    },
+    btnminus: function() {
+        console.log("-");
+    },
+    btndivide: function() {
+        console.log("/");
+    },
+    btnmultiply: function() {
+        console.log("*");
+    }
+}
+
+let equals = {
+    btnequals: function() {
+        console.log("=");
     }
 }

@@ -47,6 +47,6 @@ div {
     display: flex;
 }
 
-.allButtons {
+.operatorButtons, .numberButtons, .equalButton {
     cursor: pointer;
 }
